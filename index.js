@@ -14,14 +14,14 @@ const questions = [
     'What is your email adress'
     ];
 
-//Create a function to write README file
+//  Create a function to write README file
 function writeToFile(fileName, data) {
-    let formatedFileName = `${fileName.split(' ').join('').md}`;
+    let formatedFileName = `${fileName.split(' ').join('')}.md`;
     fs.writeFile(formatedFileName,data,(err) =>
     err ? console.log(err) : console.log('success'))
 }
 
-// Create a function to initialize app
+//  Create a function to initialize app
 function init() {
     inquirer
     .prompt([
@@ -48,8 +48,8 @@ function init() {
         {
             type:'list',
             message:questions[4],
-            name: 'licence',
-            choices:['Apache 2.0','GNU v3.0','MIT','none']
+            name: 'license',
+            choices:['Apache_2.0','bsd_2_clause','MIT','none']
         },
         {
             type:'input',
@@ -73,5 +73,5 @@ function init() {
     })
 }
 
-// Function call to initialize app
+//  Function call to initialize app
 init();
