@@ -11,7 +11,6 @@ Download the file from my github and install node!
 ## Usage
 ```md
 Open your terminal in the index.js file.
-Then run the command 'npm i'
 Then run the command 'node index' and follow the prompt
 WHEN you are prompted for information about the application repository
 THEN a high-quality, professional README.md is generated with the title of the project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, Questions, Username, and email
