@@ -52,13 +52,16 @@ function renderLicenseSection(license) {
 //  Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  \n\n${renderLicenseBadge(data.license)}\n\n 
+  \n\n${renderLicenseBadge(data.license)}\n\n
+  ## Tables of Contents\n\n * [Description](#description)\n\n * [Installation](#instalation)\n\n * [Usage](#usage)\n\n * [Contributers](#contributers)\n\n * [Questions](#questions)\n\n * [Licence](#licence)\n\n  
   ## Description\n\n${data.description}\n\n 
-  ## Installation\n${data.installation}\n\n 
-  ## Usage\n${data.usage}\n\n
-  ## My Github \n\n [${data.userName}](https://github.com/${data.userName}) \n\n 
-  For more questions contact me at [${data.email}](mailto:${data.email}) \n\n 
-  # Licences \n\n Copyrite (c) ${data.userName} \n\n 
+  ## Installation\n${data.installation}\n\n
+  
+  ## Usage\n ${data.usage}\n\n
+  ### Contributers\n ${data.contributing}\n\n
+  ## Questions \n\n Github link:[${data.userName}](https://github.com/${data.userName}) \n\n 
+  Contact me at: [${data.email}](mailto:${data.email}) \n\n 
+  ## Licence\n\n Copyright (c) ${data.userName} \n\n 
   ${renderLicenseSection(data.license)}
 `;
 }

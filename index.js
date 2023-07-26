@@ -9,6 +9,7 @@ const questions = [
     'What are your installation instructions?',
     'What is your usage?',
     'What licence are you using?',
+    'Who is contributing to this project',
     'What are your instructions for running tests?',
     'What is your github user name?',
     'What is your email adress'
@@ -54,16 +55,21 @@ function init() {
         {
             type:'input',
             message:questions[5],
-            name: 'test instructions'
+            name: 'contributing'
         },
         {
             type:'input',
             message:questions[6],
-            name: 'userName'
+            name: 'test instructions'
         },
         {
             type:'input',
             message:questions[7],
+            name: 'userName'
+        },
+        {
+            type:'input',
+            message:questions[8],
             name: 'email'
         }
     
